@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Us</title>
+  </head>
+  <body>
+
+  <h1>Contact Us</h1>
+<pre>["foo","bar"]</pre>
+
+  <script>
+    var puppy = {
+      site: {"pages":[{"path":"about.html","title":"About"},{"path":"index.html","title":"Site Index"},{"path":"contact/index.html","title":"Contact Us","tags":["foo","bar"]}],"data":{"test.json":{"foo":"bar","baz":false},"foo/bar.json":{"hello":"world"}}},
+      page: {"path":"contact/index.html","title":"Contact Us","tags":["foo","bar"]},
+    };
+    console.group('Puppy');
+    console.log('Site', puppy.site);
+    console.log('Page', puppy.page);
+    console.groupEnd();
+  </script>
+  </body>
+</html>

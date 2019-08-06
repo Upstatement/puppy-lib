@@ -1,0 +1,13 @@
+---
+title: Contact Us
+tags:
+  - foo
+  - bar
+---
+
+{% extends "@puppy/base.twig" %}
+
+{% block content %}
+<h1>Contact Us</h1>
+<pre>{{ page.tags|json_encode }}</pre>
+{% endblock %}

@@ -1,0 +1,6 @@
+/.nyc_output
+/test
+.editorconfig
+.eslintrc
+.nvmrc
+prettier.config.js
