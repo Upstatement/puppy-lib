@@ -1,51 +1,30 @@
-/* eslint-env mocha */
-const chai = require('chai');
-const { pipe, concat } = require('mississippi');
-const sinon = require('sinon');
-const through = require('through2');
-const vfs = require('vinyl-fs');
+import test from 'ava';
+import isStream from 'is-stream';
+import Vinyl from 'vinyl';
 
-const { reduce, reduceFiles } = require('../lib/utils.js');
+import puppy from '../';
 
-// Mixin event-related assertions.
-chai.use(require('chai-events'));
-
-const expect = chai.expect;
-
-describe('reduce', () => {
-  it('returns a through stream', () => {
-    expect(reduce(sinon.stub())).to.be.instanceOf(through().constructor);
-  });
-
-  it('should emit a single data event when the stream is processed', () => {
-    const reducer = reduce(sinon.stub(), {});
-    return expect(vfs.src('./test/src/data/**/*').pipe(reducer)).to.emit('data');
-  });
-
-  it('should call the passed reduce function for each stream object', done => {
-    const fake = sinon.fake((acc, data) => {
-      acc[data.relative] = data;
-      return acc;
-    });
-    function assert() {
-      expect(fake.calledThrice).to.be.true;
-      done();
-    }
-
-    pipe(
-      [vfs.src('./test/src/data/**/*'), reduce(fake, {}), concat()],
-      assert,
-    );
-  });
+test('puppy returns a promise that resolves to a readable stream', async t => {
+  const src = await puppy();
+  t.true(isStream.readable(src));
 });
 
-describe('reduceFiles', () => {
-  it('should return a promise', () => {
-    expect(reduceFiles('./test/src/pages/**/*', sinon.stub())).to.be.instanceOf(Promise);
+test('puppy stream sources vinyl files', async t => {
+  const files = await puppy({
+    pages: './test/fixture/src/pages/**/*',
+    data: './test/fixture/src/data/**/*',
+    stream: false,
   });
+  const assertVinylFile = file => t.assert(file instanceof Vinyl);
+  files.forEach(assertVinylFile);
+});
 
-  it('should resolve to reduced files', async () => {
-    const files = await reduceFiles('./test/src/pages/**/*', (acc, data) => [...acc, data], []);
-    expect(files).to.be.instanceOf(Array);
+test('vinyl files are annotated with puppy site and page data', async t => {
+  const files = await puppy({
+    pages: './test/fixture/src/pages/**/*',
+    data: './test/fixture/src/data/**/*',
+    stream: false,
   });
+  const fileData = files.map(f => f.data).filter(f => !!f);
+  t.snapshot(fileData);
 });
