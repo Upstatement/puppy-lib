@@ -1,6 +1,6 @@
 {
   "name": "@upstatement/puppy",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "The most adorable way to scaffold a static site for prototyping",
   "main": "index.js",
   "scripts": {
