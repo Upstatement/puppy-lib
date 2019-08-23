@@ -1,12 +1,12 @@
 # Puppy
 
-[![Version](https://www.npmjs.com/package/@upstatement/puppy](https://www.npmjs.com/package/@upstatement/puppy)
+![![Version](https://www.npmjs.com/package/@upstatement/puppy](https://www.npmjs.com/package/@upstatement/puppy)
 
-> The most adorable way to scaffold a static site for prototyping
+> An adorable library for building a static site generator
 
 ## Prerequisites
-- npm >
-- node >
+![Prerequisite](https://img.shields.io/badge/node-10.13.0-blue.svg)
+![Prerequisite](https://img.shields.io/badge/npm-6.4.1-blue.svg)
 
 ## Install
 
@@ -15,21 +15,37 @@
 
 ## Usage
 
-### Development
+```js
+const puppy = require('@upstatement/puppy');
+const stream = require('stream');
+const twig = require('gulp-twig');
+const util = require('util');
 
-1. `npm start`
+const html = async function() {
+  const pipeline = util.promisify(stream.pipeline);
 
-### Production
+  const pages = await puppy({
+    publicPath: '/',
+    pages: 'src/pages/**/*',
+    data: 'src/data/**/*',
+  });
+  const compile = twig({
+    namespaces: { puppy: 'src/templates' },
+    useFileContents: true,
+  });
+  const dist = dest('dist');
 
-1. `npm run build`
-2. `npx serve dist`
+  return pipeline(pages, compile, dist);
+};
+
+```
 
 ## 🤝Contributing
+
+Contributions, issues and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/upstatement/puppy-starter/issues).
 
 ## 📝License
 
 Copyright &copy; 2019 Upstatement, LLC
-
---
-
-A Puppy powered project

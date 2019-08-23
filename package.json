@@ -1,7 +1,7 @@
 {
   "name": "@upstatement/puppy",
   "version": "0.2.1",
-  "description": "The most adorable way to scaffold a static site for prototyping",
+  "description": "An adorable library for building a static site generator",
   "main": "index.js",
   "scripts": {
     "test": "ava",
