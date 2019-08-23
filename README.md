@@ -1,6 +1,6 @@
 # Puppy
 
-![![Version](https://www.npmjs.com/package/@upstatement/puppy](https://www.npmjs.com/package/@upstatement/puppy)
+[![Version](https://img.shields.io/npm/v/@upstatement/puppy)](https://npmjs.com/package/@upstatement/puppy)
 
 > An adorable library for building a static site generator
 
