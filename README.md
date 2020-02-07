@@ -4,6 +4,8 @@
 
 > An adorable library for building a static site generator
 
+Looking to build a Puppy-powered prototype? Head over to the [Puppy Starter repo](https://github.com/Upstatement/puppy-starter)!
+
 ## Prerequisites
 ![Prerequisite](https://img.shields.io/badge/node-10.13.0-blue.svg)
 ![Prerequisite](https://img.shields.io/badge/npm-6.4.1-blue.svg)
@@ -48,4 +50,4 @@ Feel free to check the [issues page](https://github.com/upstatement/puppy-starte
 
 ## 📝License
 
-Copyright &copy; 2019 Upstatement, LLC
+Copyright &copy; 2020 Upstatement, LLC
