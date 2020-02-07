@@ -24,9 +24,10 @@
     "vinyl-fs": "^3.0.3"
   },
   "devDependencies": {
+    "@ava/babel": "^1.0.0",
     "@upstatement/eslint-config": "^0.4.2",
     "@upstatement/prettier-config": "^0.3.0",
-    "ava": "^2.3.0",
+    "ava": "^3.2.0",
     "babel-eslint": "^10.0.2",
     "eslint": "^5.16.0",
     "eslint-config-prettier": "^4.3.0",
@@ -34,5 +35,11 @@
     "nyc": "^15.0.0",
     "prettier": "^1.18.2",
     "vinyl": "^2.2.0"
+  },
+  "ava": {
+    "babel": true,
+    "files": [
+      "test/**/*"
+    ]
   }
 }
