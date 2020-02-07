@@ -1,4 +1,4 @@
-# Puppy
+# Puppy Library
 
 [![Version](https://img.shields.io/npm/v/@upstatement/puppy)](https://npmjs.com/package/@upstatement/puppy)
 
@@ -46,7 +46,7 @@ const html = async function() {
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/upstatement/puppy-starter/issues).
+Feel free to check the [issues page](https://github.com/upstatement/puppy/issues).
 
 ## 📝License
 
