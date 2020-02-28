@@ -37,9 +37,10 @@
     "vinyl": "^2.2.0"
   },
   "ava": {
-    "babel": true,
     "files": [
-      "test/**/*"
-    ]
+      "test/**/*",
+      "!test/fixture"
+    ],
+    "babel": true
   }
 }
