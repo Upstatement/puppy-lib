@@ -2,9 +2,9 @@
 
 [![Version](https://img.shields.io/npm/v/@upstatement/puppy)](https://npmjs.com/package/@upstatement/puppy)
 
-> An adorable library for building a static site generator
+> An adorable library for building static site generators
 
-Looking to build a Puppy-powered prototype? Head over to the [Puppy Starter repo](https://github.com/Upstatement/puppy-starter)!
+Looking to build a Puppy-powered prototype? Head over to the [main Puppy repo](https://github.com/Upstatement/puppy)!
 
 ## Prerequisites
 ![Prerequisite](https://img.shields.io/badge/node-10.13.0-blue.svg)
@@ -46,7 +46,7 @@ const html = async function() {
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/upstatement/puppy/issues).
+Feel free to check the [issues page](https://github.com/upstatement/puppy-lib/issues).
 
 ## 📝License
 

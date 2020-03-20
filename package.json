@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Upstatement/puppy.git"
+    "url": "git+https://github.com/Upstatement/puppy-lib.git"
   },
   "author": "Upstatement Tech <tech@upstatement.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Upstatement/puppy/issues"
+    "url": "https://github.com/Upstatement/puppy-lib/issues"
   },
-  "homepage": "https://github.com/Upstatement/puppy#readme",
+  "homepage": "https://github.com/Upstatement/puppy-lib#readme",
   "dependencies": {
     "front-matter": "^3.0.2",
     "js-yaml": "^3.13.1",
