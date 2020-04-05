@@ -23,6 +23,7 @@ test('vinyl files are annotated with puppy site and page data', async t => {
   const files = await puppy({
     pages: './test/fixture/src/pages/**/*',
     data: './test/fixture/src/data/**/*',
+    screenshots: './test/fixture/dist/**/*.html.png',
     stream: false,
   });
   const fileData = files.map(f => f.data).filter(f => !!f);

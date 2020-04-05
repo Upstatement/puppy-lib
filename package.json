@@ -21,7 +21,11 @@
     "front-matter": "^3.0.2",
     "js-yaml": "^3.13.1",
     "mississippi": "^4.0.0",
-    "vinyl-fs": "^3.0.3"
+    "vinyl-fs": "^3.0.3",
+    "puppeteer": "^2.1.1",
+    "serve-handler": "^6.1.2",
+    "through2": "^3.0.1",
+    "vinyl": "^2.2.0"
   },
   "devDependencies": {
     "@ava/babel": "^1.0.0",
@@ -33,8 +37,7 @@
     "eslint-config-prettier": "^4.3.0",
     "is-stream": "^2.0.0",
     "nyc": "^15.0.0",
-    "prettier": "^1.18.2",
-    "vinyl": "^2.2.0"
+    "prettier": "^1.18.2"
   },
   "ava": {
     "files": [
