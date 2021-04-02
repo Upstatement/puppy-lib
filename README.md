@@ -49,7 +49,7 @@ Contributions, issues and feature requests are welcome!
 Feel free to check the [issues page](https://github.com/upstatement/puppy-lib/issues).
 
 ## 🚀 Release
-This library is hosted on [npmjs.com](https://npmjs.com). To create a new release and publish to NPM
+This library is hosted on [npmjs.com](https://npmjs.com). To create a new release and publish to NPM:
 
 1. Make sure you are on the `main` branch, have pulled the latest changes from GitHub, and have no local changes:
 
@@ -67,27 +67,28 @@ This library is hosted on [npmjs.com](https://npmjs.com). To create a new releas
 
     nothing to commit, working tree clean
     ```
+
 2. Bump the version according to [semantic versioning rules](https://semver.org/)
 
-  ```
-  npm version major|minor|patch
-  ```
+    ```
+    npm version major|minor|patch
+    ```
 
 3. Make sure you are logged in as a user that has access to the [`@upstatement/puppy` package](https://www.npmjs.com/package/@upstatement/puppy)
 
-  ```
-  # Check who you are currently logged in as
-  npm whoami
+    ```
+    # Check who you are currently logged in as
+    npm whoami
 
-  # Login if you're not logged in
-  npm login
-  ```
+    # Login if you're not logged in
+    npm login
+    ```
 
 4. Publish to NPM
 
-  ```
-  npm publish
-  ```
+    ```
+    npm publish
+    ```
 
 After the release is published, submit a PR to the [@upstatement/puppy template repo](https://github.com/Upstatement/puppy) that updates the version constraint to the new release number.
 
