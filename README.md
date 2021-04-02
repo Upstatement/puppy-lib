@@ -90,7 +90,7 @@ This library is hosted on [npmjs.com](https://npmjs.com). To create a new releas
     npm publish
     ```
 
-After the release is published, submit a PR to the [@upstatement/puppy template repo](https://github.com/Upstatement/puppy) that updates the version constraint to the new release number.
+After the release is published, submit a PR to the [@upstatement/puppy template repo](https://github.com/Upstatement/puppy) ([example PR](https://github.com/Upstatement/puppy/pull/179)) that updates the version constraint to the new release number.
 
 ## 📝License
 
