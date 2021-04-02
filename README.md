@@ -42,6 +42,12 @@ const html = async function() {
 
 ```
 
+## 🤝Contributing
+
+Contributions, issues and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/upstatement/puppy-lib/issues).
+
 ## 🚀 Release
 This library is hosted on [npmjs.com](https://npmjs.com). To create a new release and publish to NPM
 
@@ -84,12 +90,6 @@ This library is hosted on [npmjs.com](https://npmjs.com). To create a new releas
   ```
 
 After the release is published, submit a PR to the [@upstatement/puppy template repo](https://github.com/Upstatement/puppy) that updates the version constraint to the new release number.
-
-## 🤝Contributing
-
-Contributions, issues and feature requests are welcome!
-
-Feel free to check the [issues page](https://github.com/upstatement/puppy-lib/issues).
 
 ## 📝License
 
