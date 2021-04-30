@@ -5,4 +5,4 @@
 .eslintrc
 .nvmrc
 prettier.config.js
-
+.husky
