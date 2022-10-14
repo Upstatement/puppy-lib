@@ -1,6 +1,6 @@
 {
   "name": "@upstatement/puppy",
-  "version": "0.11.0",
+  "version": "0.12.0",
   "description": "An adorable library for building a static site generator",
   "main": "index.js",
   "repository": {
