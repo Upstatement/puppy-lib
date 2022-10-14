@@ -1,12 +1,12 @@
 import test from 'ava';
-import isStream from 'is-stream';
+import { isReadableStream } from 'is-stream';
 import Vinyl from 'vinyl';
 
-import puppy from '../';
+import puppy from '../index.js';
 
 test('puppy returns a promise that resolves to a readable stream', async t => {
   const src = await puppy();
-  t.true(isStream.readable(src));
+  t.true(isReadableStream(src));
 });
 
 test('puppy stream sources vinyl files', async t => {
@@ -15,7 +15,7 @@ test('puppy stream sources vinyl files', async t => {
     data: './test/fixture/src/data/**/*',
     stream: false,
   });
-  const assertVinylFile = file => t.assert(file instanceof Vinyl);
+  const assertVinylFile = file => t.assert(Vinyl.isVinyl(file));
   files.forEach(assertVinylFile);
 });
 
