@@ -97,4 +97,4 @@ After the release is published, submit a PR to the [@upstatement/puppy template 
 
 ## 📝License
 
-Copyright &copy; 2021 Upstatement, LLC
+Copyright &copy; 2022 Upstatement, LLC
