@@ -42,27 +42,24 @@
     "js-yaml": "^4.1.0",
     "lodash.defaultsdeep": "^4.6.1",
     "mississippi": "^4.0.0",
-    "puppeteer": "^19.0.0",
-    "serve-handler": "^6.1.2",
+    "puppeteer": "^20.4.0",
+    "serve-handler": "^6.1.5",
     "through2": "^4.0.2",
     "vinyl": "^3.0.0",
     "vinyl-fs": "^3.0.3"
   },
   "devDependencies": {
-    "@babel/core": "^7.14.0",
-    "@babel/eslint-parser": "^7.13.14",
-    "@upstatement/eslint-config": "^1.0.0",
-    "@upstatement/prettier-config": "^1.0.0",
-    "ava": "^4.3.3",
-    "eslint": "^8.25.0",
-    "eslint-config-prettier": "^8.3.0",
-    "husky": "^8.0.1",
+    "@babel/core": "^7.22.1",
+    "@babel/eslint-parser": "^7.21.8",
+    "@upstatement/eslint-config": "^2.0.0",
+    "@upstatement/prettier-config": "^1.1.0",
+    "ava": "^5.3.0",
+    "eslint": "^8.41.0",
+    "eslint-config-prettier": "^8.8.0",
+    "husky": "^8.0.3",
     "is-stream": "^3.0.0",
-    "lint-staged": "^13.0.3",
+    "lint-staged": "^13.2.2",
     "nyc": "^15.0.0",
-    "prettier": "^2.2.1"
-  },
-  "volta": {
-    "node": "16.13.1"
+    "prettier": "^2.8.8"
   }
 }
